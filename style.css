@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    --navbar-h: 3.15em;
+    --spacer: 1em;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+*{
+    flex-shrink: 1;
+    flex-grow: 1;   
+}
+
+
+.navbar{
+    background-color: #888;
+    color: white;
+    font-family: sans-serif;
+    padding: var(--spacer);
+
+}
+.navbar,
+.sidebar,
+.dashboard{
+    padding: var(--spacer);
+}
+.row{
+    display: flex;
+    flex-grow: 1000;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.sidebar{
+background-color: #567;
+color: white;
+flex-shrink: 3;
+
+}
+.dashboard{
+    background-color:#234;
+    color: white;
+    flex-grow: 30;
+}
+
+#sidebar .ex{
+    display: none;
+}
+#sidebar:target .ex{
+    display: inline;
+}
